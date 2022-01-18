@@ -33,4 +33,4 @@ with open ("portData") as jsonFile:
     dictData=json.load(jsonFile)
 
 populateSheet(dictData,worksheet)
-wb.save("sample.xlsx")
+wb.save("portInfo.xlsx")
