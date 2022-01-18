@@ -2,7 +2,7 @@ import json
 import openpyxl
 from openpyxl import load_workbook
 
-wb=load_workbook(filename="sample.xlsx")
+wb=load_workbook(filename="portInfo.xlsx")
 
 def getSheetDict(sheet):
     dictData={}
