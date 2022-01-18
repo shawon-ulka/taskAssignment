@@ -4,42 +4,42 @@
     "allPortInfo": {
         "clk": {
             "direction": "input",
-            "type": "reg",
+            "type": "wire",
             "size": 1
         },
         "address": {
             "direction": "input",
-            "type": "reg",
-            "size": 8
+            "type": "wire",
+            "size": 1
         },
         "write_data": {
             "direction": "input",
-            "type": "reg",
-            "size": 8
+            "type": "wire",
+            "size": 1
         },
         "cs": {
             "direction": "input",
-            "type": "reg",
+            "type": "wire",
             "size": 1
         },
         "we": {
             "direction": "input",
-            "type": "reg",
+            "type": "wire",
             "size": 1
         },
         "oe": {
             "direction": "input",
-            "type": "reg",
+            "type": "wire",
             "size": 1
         },
         "read_data": {
             "direction": "output",
-            "type": "reg",
-            "size": 8
+            "type": "wire",
+            "size": 1
         },
         "IO_pin": {
             "direction": "inout",
-            "type": "reg",
+            "type": "wire",
             "size": 1
         }
     }
