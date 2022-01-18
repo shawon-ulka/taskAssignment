@@ -6,10 +6,7 @@ wb=Workbook()
 worksheet=wb.active
 
 def populateSheet(dictData,sheet):
-    # sheet.cell(1,1,"portName")
-    # sheet.cell(1,2,"portDirection")
-    # sheet.cell(1,3,"size")
-    # sheet.cell(1,4,"type")
+
     index=1
     for key, value in dictData.items():
         if key=="module name":
