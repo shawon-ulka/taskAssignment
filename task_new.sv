@@ -9,6 +9,7 @@ module memory (input   wire                  clk, input   wire [7:0] address,   
 	inout IO_pin
   ); 
   
+  
     
 
 endmodule 
