@@ -13,9 +13,10 @@ with open("testBench.sv","w") as f:
     f.writelines(f"module tb_{allInfoDict['module name']};//TestBench code start\n\n")
     allPortInfo=allInfoDict["allPortInfo"]
     index=1
+
     for key,value in allPortInfo.items():
         portInfo=allPortInfo[key]
-        outputLine=""
+
         if portInfo["type"]=="wire" and portInfo["direction"]=="input":
             size=sizeString(portInfo['size'])
             outputLine=f"\treg {size} {key};\n"
@@ -26,7 +27,7 @@ with open("testBench.sv","w") as f:
             size=sizeString(portInfo['size'])
             outputLine=f"\treg {size} {key};\n"
         if index==len(allPortInfo):
-            outputLine=outputLine.replace(",","")
+            outputLine=outputLine.replace(";","")
         f.writelines(outputLine)
         index+=1
     f.writelines("\nendmodule//TestBench code end")

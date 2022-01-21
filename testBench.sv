@@ -9,6 +9,6 @@ module tb_memory;//TestBench code start
 	reg  we;
 	reg  oe;
 	wire [7:0] read_data;
-	reg  IO_pin;
+	reg  IO_pin
 
 endmodule//TestBench code end
